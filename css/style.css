@@ -194,7 +194,7 @@ footer ul li {
   margin-bottom: 90px;
 }
 
-.bar1 {
+.bar1_mobile {
   width: 50px;
   height: 450px;
   float: left;
@@ -202,18 +202,34 @@ footer ul li {
   background-color: #e7372d;
 }
 
-.quote1 {
+.quote1_mobile {
   font-family: arno pro;
   font-style: italic;
   font-weight: semibold;
-  color: #e7372d;
-  font-size: 32px;
-  width: 60%;
+  color: black;
+  font-size: 28px;
   line-height: 1.4em;
   margin-bottom: 150px;
 }
 
+.bar1_desktop {
+  width: 450px;
+  height: 500px;
+  float: left;
+  background-color: #e7372d;
+  position:relative;
+}
 
+.quote1_desktop {
+  font-family: arno pro;
+  font-style: italic;
+  font-weight: semibold;
+  color: black;
+  font-size: 32px;
+  line-height: 1.4em;
+  margin-bottom: 150px;
+
+}
 
 .containergrid {
   display: grid;
@@ -374,6 +390,14 @@ footer ul li {
         display:none;
       }
 
+    .bar1_desktop{
+      display:none;
+    }
+
+    .quote1_desktop {
+      display:none;
+    }
+
     }
 
     @media only screen 
@@ -392,4 +416,12 @@ footer ul li {
         display:none;
       }
 
-      }    
+      .bar1_mobile {
+        display:none;
+      }
+
+      .quote1_mobile {
+        display:none;
+      }
+
+      }
